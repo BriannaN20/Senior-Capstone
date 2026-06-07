@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hidden Chemicals in Food | Brianna & Kim</title>
+    
+    <!-- BULLETPROOF GOOGLE FONTS INCLUSION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,18 +20,35 @@
         <div class="shape shape-3"></div>
     </div>
 
+    <!-- STICKY NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Chemicals in Food</a>
+            <div class="nav-links">
+                <a href="#problem">The Problem</a>
+                <a href="#chemicals">Chemicals</a>
+                <a href="#process">Our Process</a>
+                <a href="#presentation">Presentation</a>
+                <a href="#interviews">Interviews</a>
+                <a href="#action">Take Action</a>
+            </div>
+        </div>
+    </nav>
+
     <header>
         <h1>Hidden Chemicals in Your Food</h1>
         <p>A research project by Brianna & Kim</p>
     </header>
 
     <main>
-        <section class="card">
+        <!-- THE PROBLEM SECTION -->
+        <section id="problem" class="card">
             <h2>The Problem</h2>
             <p>Every day, millions of people consume packaged snacks without realizing the synthetic chemicals and preservatives hidden in the ingredients list. Our research aims to shed light on what these additives actually do to our bodies and why "clean eating" has become a necessity in the modern market.</p>
         </section>
 
-        <section class="card">
+        <!-- CHEMICAL TABLE SECTION -->
+        <section id="chemicals" class="card">
             <h2>Common Chemicals to Watch</h2>
             <p>Through our research, we identified several additives frequently found in standard snacks. Here are a few we focused on:</p>
             <table class="chemical-table">
@@ -56,7 +79,43 @@
             </table>
         </section>
 
-        <section class="card">
+        <!-- DEDICATED PROCESS / METHODOLOGY SECTION -->
+        <section id="process" class="card">
+            <h2>Documenting Our Process & Methodology</h2>
+            <p class="section-intro">A comprehensive look at how we built our research initiative, from foundational analysis to community outreach.</p>
+            
+            <div class="horizontal-process-track">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3>Phase 1: Topic Selection</h3>
+                    </div>
+                    <p>We analyzed clinical studies regarding the long-term impact of highly processed foods and chemical additives on community health, focusing our scope on widely used preservatives and food dyes.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Phase 2: Clinical Interviews</h3>
+                    </div>
+                    <p>To connect our findings with real-world observations, we coordinated and conducted field interviews with medical professionals regarding the metabolic and pediatric trends they see daily.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3>Phase 3: Digital Synthesis</h3>
+                    </div>
+                    <p>We compiled our data into an interactive layout, organized our chemical profiles, and developed this web application and community feedback portal to spark public awareness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRESENTATION SECTION -->
+        <section id="presentation" class="card">
             <h2>Our Research Presentation</h2>
             <p>Our research investigates the common additives and synthetic chemicals lurking in popular snacks. Review our interactive presentation below to see the findings, data, and analysis we compiled.</p>
             <div class="iframe-wrapper">
@@ -64,64 +123,67 @@
             </div>
         </section>
 
-     <!-- INLINE VIDEO SECTION -->
-        <section class="card">
+        <!-- INTERVIEWS SECTION -->
+        <section id="interviews" class="card">
             <h2>Community Voices: Healthcare Interviews</h2>
-            <p class="section-intro">To back up our research with real-world clinical perspectives, we conducted video interviews with local healthcare professionals about the trends they see regarding synthetic diets and processed foods.</p>
+            <p class="section-intro">To connect our literary research with real-world clinical observations, we coordinated and conducted interviews with medical professionals. They provided invaluable field insights regarding the metabolic and pediatric trends they see daily.</p>
             
-            <div class="video-grid">
-                
+            <div class="video-grid-new">
                 <!-- Interview 1 -->
-                <div class="video-block">
-                    <div class="nurse-info">
-                        <h3>Healthcare Professional — Video 1</h3>
-                        <p class="nurse-meta">Community Health Outreach Evidence</p>
-                    </div>
-                    <div class="iframe-wrapper" style="height: auto;">
-                        <video controls width="100%" playsinline height="350" style="display: block; background: #000;">
+                <div class="video-block-new">
+                    <h3>Clinical Interview 1</h3>
+                    <div class="video-wrapper-new">
+                        <video controls playsinline>
                             <source src="nurse1.mov" type="video/mp4">
                             <source src="nurse1.mov" type="video/quicktime">
-                            Your browser does not support the video tag.
                         </video>
+                    </div>
+                    <div class="interview-notes">
+                        <strong>Key Insight:</strong> Misleading labels on processed foods mask hidden ingredients, causing significant health issues when consumers unknowingly purchase and eat unhealthy options.
                     </div>
                 </div>
 
                 <!-- Interview 2 -->
-                <div class="video-block">
-                    <div class="nurse-info">
-                        <h3>Healthcare Professional — Video 2</h3>
-                        <p class="nurse-meta">Community Health Outreach Evidence</p>
-                    </div>
-                    <div class="iframe-wrapper" style="height: auto;">
-                        <video controls width="100%" playsinline height="350" style="display: block; background: #000;">
+                <div class="video-block-new">
+                    <h3>Clinical Interview 2</h3>
+                    <div class="video-wrapper-new">
+                        <video controls playsinline>
                             <source src="nurse2.mov" type="video/mp4">
                             <source src="nurse2.mov" type="video/quicktime">
-                            Your browser does not support the video tag.
                         </video>
+                    </div>
+                    <div class="interview-notes">
+                        <strong>Key Insight:</strong> Modern rates of diabetes and hypertension are closely linked to hyper-processed food consumption, affecting roughly half of all patients observed in clinical practice.
                     </div>
                 </div>
 
                 <!-- Interview 3 -->
-                <div class="video-block">
-                    <div class="nurse-info">
-                        <h3>Healthcare Professional — Video 3</h3>
-                        <p class="nurse-meta">Community Health Outreach Evidence</p>
-                    </div>
-                    <div class="iframe-wrapper" style="height: auto;">
-                        <video controls width="100%" playsinline height="350" style="display: block; background: #000;">
+                <div class="video-block-new">
+                    <h3>Clinical Interview 3</h3>
+                    <div class="video-wrapper-new">
+                        <video controls playsinline>
                             <source src="nurse3.mov" type="video/mp4">
                             <source src="nurse3.mov" type="video/quicktime">
-                            Your browser does not support the video tag.
                         </video>
                     </div>
+                    <div class="interview-notes">
+                        <strong>Key Insight:</strong> Artificial sweeteners carry risks comparable to refined sugars, while excessive consumption of sugar and salt remains a primary driver of major health complications.
+                    </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="card">
+        <!-- TAKE ACTION FORM SECTION -->
+        <section id="action" class="card">
             <h2>Take Action</h2>
-            <p>What do you think? After reviewing our findings, please share your thoughts or let us know if you'll be changing your snack habits. Your feedback is crucial to our research.</p>
+            <p>We compiled our clinical findings into an interactive presentation and organized our chemical profile database. Finally, we developed this web interface and feedback portal to spark community awareness and track public responses regarding snack choices.</p>
+            
+            <div class="data-impact-box">
+                <span class="stat-number">72.7%</span>
+                <p class="stat-text">of community respondents surveyed pledged to actively switch out a chemical-heavy snack for a healthier, clean alternative after reviewing our research findings.</p>
+            </div>
+
+            <p class="form-prompt">What do you think? After reviewing our findings, please share your thoughts or let us know if you'll be changing your snack habits. Your feedback is crucial to our research.</p>
             <div class="iframe-wrapper">
                 <iframe src="https://forms.gle/a7xbpSAyLiVK8RR58"></iframe>
             </div>
