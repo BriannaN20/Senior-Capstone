@@ -171,3 +171,77 @@ blockquote {
     margin: 0;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.02);
 }
+
+/* --- Foolproof Google Drive Video Cards --- */
+.video-card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.video-card {
+    background-color: #f1f8e9;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #c8e6c9;
+}
+
+.video-card-info h3 {
+    color: #1b5e20;
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+}
+
+.video-card-meta {
+    font-size: 0.9rem;
+    color: #558b2f;
+    margin: 0 0 15px 0;
+}
+
+/* The box that acts like a video container */
+.video-play-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2e7d32; /* Rich Green base */
+    color: white;
+    text-decoration: none;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(46, 125, 50, 0.15);
+    
+    /* Smooth transitions for your preferred sink effect */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Big Play Button Icon */
+.play-icon {
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.play-text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #f1f8e9;
+}
+
+/* Sinks in smoothly on hover just like your main project cards */
+.video-play-box:hover {
+    background-color: #1b5e20;
+    transform: scale(0.97); 
+}
+
+.video-play-box:hover .play-icon {
+    transform: scale(1.1); /* Slightly pops the play triangle when sinking the card */
+}
